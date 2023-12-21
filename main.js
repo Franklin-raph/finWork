@@ -31,12 +31,12 @@ $(document).ready(function() {
 		
 		question.addEventListener('click', () => {
 			console.log(question);
-			// faqItems.forEach(otherItem => {
-			// 	if (otherItem !== item && otherItem.classList.contains('open')) {
-			// 		otherItem.classList.remove('open');
-			// 		otherItem.querySelector('.faq-answer').style.maxHeight = '0';
-			// 	}
-			// });
+			faqItems.forEach(otherItem => {
+				if (otherItem !== item && otherItem.classList.contains('open')) {
+					otherItem.classList.remove('open');
+					otherItem.querySelector('.faq-answer').style.maxHeight = '0';
+				}
+			});
 
 			item.classList.toggle('open');
 			const answer = item.querySelector('.faq-answer');
