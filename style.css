@@ -220,8 +220,8 @@
 }
 
 .past-faq-item {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 10px;
+  border-top: 1px solid #ddd;
+  /* margin-bottom: 10px; */
   overflow: hidden;
   background-color: #fff;
   background-size: cover;
