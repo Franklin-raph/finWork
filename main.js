@@ -46,3 +46,28 @@ $(document).ready(function() {
 	});
 
 // FAQ ENDS
+
+
+
+// PAST WORK STARTS
+
+const pastFaqItems = document.querySelectorAll('.past-faq-item');
+
+pastFaqItems.forEach(item => {
+	const question = item.querySelector('.past-faq-question');
+
+	question.addEventListener('click', () => {
+		pastFaqItems.forEach(otherItem => {
+			if (otherItem !== item && otherItem.classList.contains('open')) {
+				otherItem.classList.remove('open');
+				otherItem.querySelector('.past-faq-answer').style.maxHeight = '0';
+			}
+		});
+
+		item.classList.toggle('open');
+		const answer = item.querySelector('.past-faq-answer');
+		answer.style.maxHeight = item.classList.contains('open') ? answer.scrollHeight + 'px' : '0';
+	});
+});
+
+// PAST WORK STARTS
