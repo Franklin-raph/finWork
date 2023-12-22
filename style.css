@@ -231,7 +231,7 @@
 
 .past-faq-item.open .past-faq-question {
   all: unset;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -255,7 +255,7 @@
 .past-faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 1s ease-out;
   transform-origin: top;
 }
 
