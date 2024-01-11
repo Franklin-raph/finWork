@@ -71,3 +71,15 @@ pastFaqItems.forEach(item => {
 });
 
 // PAST WORK STARTS
+
+
+let slides = document.querySelectorAll('.carousel-slide');
+let currentIndex = 0;
+
+function changeSlide() {
+ slides[currentIndex].style.opacity = 0;
+ currentIndex = (currentIndex + 1) % slides.length;
+ slides[currentIndex].style.opacity = 1;
+}
+
+setInterval(changeSlide, 3000); // Change slide every 3 seconds
